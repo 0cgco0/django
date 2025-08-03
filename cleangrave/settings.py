@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-e)+ab_bklq3c(+aov4=m1*^*8!8lze6!q)p7)dpz$ro@zxff2a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*','localhost','.vercel.app']
+ALLOWED_HOSTS = ['*','localhost','django-taupe-sigma.vercel.app']
 
 
 # Application definition
