@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CleanGrave.Co | {% block title %} {% endblock %}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="{% static 'images/icon.png'%}">
+  <link rel="stylesheet" href="{% static 'css.css' %}?=12">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+        <div class="n-c">
+            <div class="m-c">
+                <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="w">
+                    <div class="n-r">
+                        <div class="n-l-c">
+                            <a href="/" class="n-l"><img src="{% static 'images/logo.png'%}" style="display: block;margin: auto;height: 40px;"/></a>
+                        <nav role="navigation" class="n-m">
+                        <a href="/how-it-works/" class="n-l">HOW IT WORKS</a><a href="/blog/" class="n-l">BLOG</a><a href="/locations/" class="n-l">LOCATIONS</a>
+                    </nav>
+                     
+                    
+                    
+                    </div>
+                        <div class="n-r-c-w">
+                        <div class="n-r-c">
+                        <a href="https://forms.fillout.com/t/uiJ6eR9pNMus"  class="n-b-2"><div>REGISTER</div></a>
+                        </div>
+
+                        <label for="menu" class="m-b">&#9776;</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapsible-menu">
+                <input type="checkbox" id="menu">
+                <div class="menu-content">
+                    <ul><li><a href="/how-it-works/">HOW IT WORKS</a></li>
+                         <ul><li><a href="/blog/">BLOG</a></li>
+                             <ul><li><a href="/locations/">LOCATIONS</a></li>
+                     <li><a href="https://forms.fillout.com/t/uiJ6eR9pNMus" class="collapsible-menu-button-bg" >REGISTER</a></li>
+                    </ul>
+                </div>
+            </div>
+    </div> 
+    <!-- navbar -->
+    <!-- content -->
+  {% block content %}
+  
+  {% endblock %}
+    <!-- content -->
+    <!-- footer -->    
+    <div class="footer">
+    <div class="footer-links">
+    <a href="/terms/">TERMS</a>
+    <a href="/privacy/">PRIVACY</a>
+    <a href="/contact/">CONTACT</a>
+    </div>
+    <div class="footer-links-2">
+    <span>© 2025 ALL RIGHTS RESERVED</span>
+    </div>
+    </div>
+    <!-- footer -->
+</body>
+</html>
