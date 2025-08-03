@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-e)+ab_bklq3c(+aov4=m1*^*8!8lze6!q)p7)dpz$ro@zxff2a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*','localhost','django-taupe-sigma.vercel.app', 'django-git-main-hs-projects-846357f4.vercel.app','django-5jckyb8ty-hs-projects-846357f4.vercel.app']
+ALLOWED_HOSTS = ['*','django-60ks.onrender.com']
 
 
 # Application definition
